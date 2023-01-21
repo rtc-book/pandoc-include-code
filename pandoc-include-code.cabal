@@ -36,14 +36,14 @@ library
                    , filepath
                    , text                 >= 1.2      && < 2
                    , mtl                  >= 2.2      && < 3
-                   , pandoc-types         >= 1.20
+                   , pandoc-types         == 1.22.2.1
 
 
 executable pandoc-include-code
     hs-source-dirs:  filter
     main-is:         Main.hs
     build-depends:   base                 >= 4        && < 5
-                   , pandoc-types         >= 1.20
+                   , pandoc-types         == 1.22.2.1
                    , pandoc-include-code
 
 test-suite filter-tests
@@ -53,7 +53,7 @@ test-suite filter-tests
                    , Paths_pandoc_include_code
     main-is:         Driver.hs
     build-depends:   base                 >= 4        && < 5
-                   , pandoc-types         >= 1.20
+                   , pandoc-types         == 1.22.2.1
                    , pandoc-include-code
                    , tasty
                    , tasty-hunit
